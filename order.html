@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — Body Scent</title>
+  <meta name="description" content="สั่งซื้อน้ำหอมฉีดตัวและโรลออน Body Scent">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- สไตล์เฉพาะหน้าสั่งซื้อ -->
+  <style>
+    .order-wrap { max-width: 640px; margin-inline: auto; }
+
+    .order-card { padding: var(--space-5) var(--space-4); }
+
+    .field .hint {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      color: var(--color-ink-mute);
+    }
+
+    .req { color: var(--color-accent-dark); }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .order-back {
+      margin-top: var(--space-3);
+      text-align: center;
+      font-size: 0.875rem;
+    }
+
+    .order-back a {
+      border-bottom: var(--line-width) solid var(--color-accent-soft);
+      padding-bottom: 2px;
+    }
+
+    @media (max-width: 640px) {
+      .order-card { padding: var(--space-4) var(--space-3); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Body Scent</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="eyebrow">Order</span>
+          <h1>สั่งซื้อสินค้า</h1>
+          <hr class="divider">
+          <p>กรอกข้อมูลด้านล่างเพื่อยืนยันคำสั่งซื้อของคุณ</p>
+        </div>
+
+        <div class="order-wrap">
+          <div class="card order-card">
+
+            <form id="orderForm">
+
+              <div class="field">
+                <label for="customerName">ชื่อลูกค้า <span class="req">*</span></label>
+                <input class="input" type="text" id="customerName" name="customerName"
+                       autocomplete="name" placeholder="ชื่อ-นามสกุล" required>
+              </div>
+
+              <div class="field">
+                <label for="contact">เบอร์โทร / Line <span class="req">*</span></label>
+                <input class="input" type="text" id="contact" name="contact"
+                       autocomplete="tel" placeholder="เบอร์โทรศัพท์ หรือ Line ID" required>
+              </div>
+
+              <div class="field">
+                <label for="items">รายการสินค้า <span class="req">*</span></label>
+                <textarea class="textarea" id="items" name="items" rows="2"
+                          style="min-height: 0;" placeholder="ชื่อสินค้าที่ต้องการสั่งซื้อ" required></textarea>
+                <span class="hint">เติมให้อัตโนมัติเมื่อกด "สั่งซื้อ" จากหน้าสินค้า</span>
+              </div>
+
+              <div class="field">
+                <label for="total">จำนวนเงินรวม (บาท) <span class="req">*</span></label>
+                <input class="input" type="number" id="total" name="total"
+                       min="0" step="1" inputmode="numeric" placeholder="0" required>
+              </div>
+
+              <div class="field">
+                <label for="note">หมายเหตุ</label>
+                <textarea class="textarea" id="note" name="note"
+                          placeholder="ที่อยู่จัดส่ง หรือรายละเอียดเพิ่มเติม (ถ้ามี)"></textarea>
+              </div>
+
+              <button class="btn btn--solid btn--block" type="submit">ยืนยันสั่งซื้อ</button>
+
+            </form>
+
+          </div>
+
+          <p class="order-back"><a href="product.html">← กลับไปเลือกสินค้า</a></p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <span class="brand">Body Scent</span>
+      <p class="mb-0">Your Scent, Your Feeling.</p>
+      <div class="site-footer__links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </div>
+      <p class="site-footer__copy">&copy; 2026 BODY SCENT. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

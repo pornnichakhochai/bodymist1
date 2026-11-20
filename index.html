@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Body Scent — Your Scent, Your Feeling</title>
+  <meta name="description" content="Body Scent น้ำหอมฉีดตัวและโรลออน ให้ทุกกลิ่นเป็นตัวแทนความรู้สึก เลือกกลิ่นที่ใช่ตามอารมณ์ของคุณ">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- สไตล์เฉพาะหน้าแรก (ส่วนที่ style.css กลางยังไม่มี) -->
+  <style>
+    .hero--full {
+      display: flex;
+      align-items: center;
+      min-height: calc(100vh - 77px);
+      min-height: calc(100svh - 77px);
+      padding-block: var(--space-6);
+    }
+
+    .hero--full .hero__inner { max-width: 880px; }
+
+    .hero__title {
+      margin-bottom: 0;
+      font-family: var(--font-serif-th);
+      font-size: clamp(1.75rem, 4.2vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.65;
+      letter-spacing: 0.02em;
+    }
+
+    .hero--full .lead { max-width: 640px; margin-inline: auto; }
+
+    .mood-card {
+      display: block;
+      text-align: center;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+
+    .mood-card:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-4px);
+      color: inherit;
+    }
+
+    .mood-card .mood-icon {
+      margin-bottom: var(--space-3);
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+    }
+
+    .mood-card h3 { margin-bottom: 0.25rem; letter-spacing: 0.12em; }
+
+    .mood-card__th {
+      display: block;
+      font-family: var(--font-serif-th);
+      font-size: 0.875rem;
+      color: var(--color-ink-mute);
+    }
+
+    .mood-card p { font-size: 0.9375rem; margin-bottom: var(--space-3); }
+
+    .mood-card__cta {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-accent-dark);
+    }
+
+    @media (max-width: 640px) {
+      .hero--full {
+        min-height: calc(100vh - 65px);
+        min-height: calc(100svh - 65px);
+        padding-block: var(--space-5);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Body Scent</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html" class="is-active">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero hero--full">
+      <div class="container">
+        <div class="hero__inner">
+          <span class="eyebrow">Body Scent</span>
+          <h1 class="hero__title">
+            ให้ทุกกลิ่นเป็นตัวแทนความรู้สึก<br>
+            และทุกวันเป็นวันที่มีกลิ่นหอมในแบบของคุณ
+          </h1>
+          <hr class="divider">
+          <p class="lead">
+            Body Scent เติมเต็มทุกช่วงเวลาของวันด้วยกลิ่นหอมที่สะท้อนตัวตนและอารมณ์ของคุณ
+            เพราะเราเชื่อว่ากลิ่นหอมไม่ใช่แค่ความหอม แต่เป็นเสน่ห์ที่บอกความเป็นคุณ
+          </p>
+          <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mood & Scent -->
+    <section class="section" id="moods">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mood &amp; Scent</span>
+          <h2>เลือกกลิ่นตามความรู้สึก</h2>
+          <hr class="divider">
+          <p>เพราะทุกคนมีความรู้สึกที่แตกต่าง และทุกความรู้สึกก็มีความหอมเป็นของตัวเอง</p>
+        </div>
+
+        <div class="grid grid--4">
+
+          <a class="card mood-card" data-mood="fresh" href="product.html?mood=fresh">
+            <span class="mood-icon" aria-hidden="true">01</span>
+            <h3>FRESH</h3>
+            <span class="mood-card__th">สดชื่น</span>
+            <hr class="mood-underline mood-underline--center">
+            <p>เติมความสดใสให้ทุกวันด้วยกลิ่นหอมโปร่งสะอาด ให้ความรู้สึกสดชื่น เบาสบาย และมีชีวิตชีวา</p>
+            <span class="mood-card__cta">ดูสินค้า Fresh</span>
+          </a>
+
+          <a class="card mood-card" data-mood="sweet" href="product.html?mood=sweet">
+            <span class="mood-icon" aria-hidden="true">02</span>
+            <h3>SWEET</h3>
+            <span class="mood-card__th">หวานละมุน</span>
+            <hr class="mood-underline mood-underline--center">
+            <p>กลิ่นหอมหวานแผ่วเบาที่ให้ความรู้สึกอ่อนโยน น่ารัก และอบอุ่น เป็นความหวานที่พอดี ไม่มากเกินไป</p>
+            <span class="mood-card__cta">ดูสินค้า Sweet</span>
+          </a>
+
+          <a class="card mood-card" data-mood="confident" href="product.html?mood=confident">
+            <span class="mood-icon" aria-hidden="true">03</span>
+            <h3>CONFIDENT</h3>
+            <span class="mood-card__th">มั่นใจ</span>
+            <hr class="mood-underline mood-underline--center">
+            <p>กลิ่นหอมสะอาด สุขุม และมีระดับ สะท้อนบุคลิกที่มั่นใจ ดูดี และน่าเชื่อถือ</p>
+            <span class="mood-card__cta">ดูสินค้า Confident</span>
+          </a>
+
+          <a class="card mood-card" data-mood="romance" href="product.html?mood=romance">
+            <span class="mood-icon" aria-hidden="true">04</span>
+            <h3>ROMANCE</h3>
+            <span class="mood-card__th">โรแมนติก</span>
+            <hr class="mood-underline mood-underline--center">
+            <p>กลิ่นหอมอบอุ่น หวานลึกซึ้ง และน่าหลงใหล เติมเสน่ห์ให้ทุกช่วงเวลาให้น่าจดจำ</p>
+            <span class="mood-card__cta">ดูสินค้า Romance</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <span class="brand">Body Scent</span>
+      <p class="mb-0">Your Scent, Your Feeling.</p>
+      <div class="site-footer__links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </div>
+      <p class="site-footer__copy">&copy; 2026 BODY SCENT. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
