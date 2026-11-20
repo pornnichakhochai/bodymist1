@@ -6,7 +6,7 @@
     "type": "spray",
     "size": "30ml",
     "price": 89,
-    "image": "images/fresh.jpg",
+    "image": "images/fresh.jpeg",
     "description": "กลิ่นสะอาด สดชื่น เบาสบาย ขนาดพกพา เหมาะกับการเติมความสดชื่นระหว่างวัน"
   },
   {
@@ -16,7 +16,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "images/fresh.jpg",
+    "image": "images/fresh.jpeg",
     "description": "กลิ่นสะอาด สดชื่น เบาสบาย ขนาดคุ้มค่า สำหรับใช้ประจำทุกวัน"
   },
   {
@@ -26,7 +26,7 @@
     "type": "spray",
     "size": "30ml",
     "price": 89,
-    "image": "images/sweet.jpg",
+    "image": "images/sweet.jpeg",
     "description": "กลิ่นหอมหวานนุ่มนวล อบอุ่นอย่างพอดี ขนาดพกพา เหมาะกับการเติมกลิ่นระหว่างวัน"
   },
   {
@@ -36,7 +36,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "images/sweet.jpg",
+    "image": "images/sweet.jpeg",
     "description": "กลิ่นหอมหวานนุ่มนวล อบอุ่นอย่างพอดี ขนาดคุ้มค่า สำหรับใช้ประจำทุกวัน"
   },
   {
@@ -46,7 +46,7 @@
     "type": "spray",
     "size": "30ml",
     "price": 89,
-    "image": "images/confident.jpg",
+    "image": "images/confident.jpeg",
     "description": "กลิ่นสุขุม มั่นคง มีมิติ ขนาดพกพา เติมความมั่นใจได้ทุกที่ทุกเวลา"
   },
   {
@@ -56,7 +56,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "images/confident.jpg",
+    "image": "images/confident.jpeg",
     "description": "กลิ่นสุขุม มั่นคง มีมิติ ขนาดคุ้มค่า สำหรับผู้ที่ต้องการความมั่นใจทุกวัน"
   },
   {
@@ -66,7 +66,7 @@
     "type": "spray",
     "size": "30ml",
     "price": 89,
-    "image": "images/romance.jpg",
+    "image": "images/romance.jpeg",
     "description": "กลิ่นอ่อนหวานละมุน โรแมนติกอย่างเป็นธรรมชาติ ขนาดพกพา เหมาะกับทุกโอกาสพิเศษ"
   },
   {
@@ -76,7 +76,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "images/romance.jpg",
+    "image": "images/romance.jpeg",
     "description": "กลิ่นอ่อนหวานละมุน โรแมนติกอย่างเป็นธรรมชาติ ขนาดคุ้มค่า สำหรับใช้ได้ทุกวัน"
   },
   {
@@ -86,7 +86,7 @@
     "type": "rollon",
     "size": null,
     "price": 149,
-    "image": "images/fresh.jpg",
+    "image": "images/fresh.jpeg",
     "description": "โรลออนกลิ่นสะอาด สดชื่น พกพาสะดวก ทาเติมได้ตลอดวัน"
   },
   {
@@ -96,7 +96,7 @@
     "type": "rollon",
     "size": null,
     "price": 149,
-    "image": "images/sweet.jpg",
+    "image": "images/sweet.jpeg",
     "description": "โรลออนกลิ่นหอมหวานนุ่มนวล พกพาสะดวก ทาเติมได้ตลอดวัน"
   }
 ]
